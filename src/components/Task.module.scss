@@ -1,0 +1,65 @@
+.task {
+  display: flex;
+  padding: 1rem;
+  max-height: 72px;
+  text-overflow: clip;
+  background-color: var(--bg-two-01);
+  border: 1px solid var(--bg-one-100);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+
+  .ok {
+    width: 1.5rem;
+    width: 6%;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      display: flex;
+      background-color: transparent;
+      border: 2px solid var(--bg-three);
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      color: transparent;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  }
+
+  .text {
+    width: 88%;
+    white-space: pre-rap;
+    overflow: scroll;
+    text-overflow: ellipsis;
+  }
+
+  .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6%;
+    color: var(--text-special);
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.completed {
+    background-color: rgba(58, 58, 58, 0.096);
+    color: var(--bg-special);
+
+    span {
+      background-color: var(--bg-three);
+      border: 2px solid var(--bg-three);
+      color: var(--text-one);
+    }
+  }
+}

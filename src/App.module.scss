@@ -1,0 +1,165 @@
+:root {
+  --bg-one: #0D0D0D;
+  --bg-one-00: #21212B00;
+  --bg-one-100: #2d2d36;
+
+  --bg-two: #1A1A1A;
+  --bg-special: #808080;
+
+  --bg-two-01: rgba(170, 170, 187, 0.1);
+
+
+  --bg-three: #1E6F9F;
+
+  --link: #0070f3;
+
+  --hover: #ff4858;
+
+  --text-one: #cfc7c7;
+  --text-one-06: #F2F2F2;
+
+  --text-two: rgb(24, 19, 19);
+
+  --text-special: #c40847;
+  --text-special-01: rgba(196, 8, 71, 0.1);
+
+  --text-special-two: #9d0a0e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  color: var(--text-one);
+  background-color: var(--bg-two);
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font: 400 1rem 'Source Sans Pro', serif;
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--bg-two);
+  color: var(--text-one);
+  display: flex;
+  flex-direction: column;
+
+  .a {
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(left, var(--bg-three), var(--hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+  form {
+    display: flex;
+    // flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 90vw;
+    max-width: 736px;
+    height: 3.5rem;
+    top: 173px;
+
+    input {
+
+      // display: flex;
+      // width: 70vw;
+      max-width: 736px;
+      background-color: var(--bg-special);
+      color: var(--text-one-06);
+      flex-grow: 1;
+      height: 95%;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    button {
+      height: 95%;
+      width: 5.6rem;
+      border-radius: 8px;
+      background-color: var(--bg-three);
+    }
+
+  }
+
+
+
+}
+
+.header {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: var(--bg-one);
+  color: var(--text-one);
+
+  .headerTitle {
+    display: flex;
+    margin: auto;
+  }
+
+  .headerLogo {
+    margin: auto;
+    margin-right: .5rem;
+  }
+}
+
+.tasksSection {
+  text-align: center;
+  margin: 4rem auto 0;
+  width: 736px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.4rem 1.5rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    .noTask {
+      border-top: 1px solid var(--text-one-06);
+      border-radius: 10px;
+    }
+  }
+
+}
